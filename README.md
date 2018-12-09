@@ -30,12 +30,9 @@ Any [`Image` property](http://facebook.github.io/react-native/docs/image.html) a
 | Prop | Description | Default |
 |---|---|---|
 |**`styles`**|Styles applied to the inner image component.|*None*|
-|**`id`**|A component to display progress, will be passed a `progress` prop with a number between 0 and 1 and `indeterminate` a boolean wether or not component has started recieveing data.|`ActivityIndicator`|
-|**`uri`**|An object of props being passed to the `indicator` component. To disable indeterminate state, pass `{indeterminate: false}`.|*None*|
-|**`selected`**|Function to render your own custom indicator, useful for something very simple. If not, consider breaking it out to a separate component and use `indicator` prop instead.|*None*|
-
-
-Note: `onLoad*` events are bubbled up, so if you want to do some custom thing when the image is loaded for example. 
+|**`id`**|id of the component.|*None*|
+|**`uri`**|uri of the component.|*None*|
+|**`selected`**|Enumerate selected images|*None*|
 
 ## Demo
 
