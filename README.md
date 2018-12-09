@@ -7,9 +7,6 @@
 yarn add react-native-image-listitem
 ```
 
-**Note: Progress indicators has been broken out to a separate component; [react-native-progress](https://github.com/oblador/react-native-progress). To use them, please follow installation instructions for that package.**
-
-
 ## Usage
 
 ```js
