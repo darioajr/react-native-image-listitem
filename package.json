@@ -10,8 +10,8 @@
         "gallery"
     ],
     "author": {
-      "name": "Joel Arvidsson",
-      "email": "joel@oblador.se"
+      "name": "Dario Alves Junior",
+      "email": "darioajr@gmail.com"
     },
     "homepage": "https://github.com/darioajr/react-native-image-listitem",
       "bugs": {
@@ -24,9 +24,10 @@
     "license": "MIT",
     "main": "index.js",
     "scripts": {
-        "build": "webpack"
+      "test": "eslint index.js",
+      "format": "./node_modules/.bin/prettier --write {,Example/}*.js"
     },
-    "peerDependencies": {
+    "dependencies": {
         "prop-types": "^15.6.0",
         "react": "16.6.1",
         "react-native": "0.57.7",
@@ -43,7 +44,13 @@
         "react": "16.6.1",
         "react-native": "0.57.7",
         "react-dom": "^16.6.1",
-        "webpack": "^4.5.0",
-        "webpack-cli": "^2.0.14"
+        "babel-eslint": "^7.0.0",
+        "babel-jest": "^20.0.3",
+        "eslint": "^3.7.1",
+        "eslint-config-airbnb": "^15.0.1",
+        "eslint-plugin-import": "^2.3.0",
+        "eslint-plugin-jsx-a11y": "^5.0.3",
+        "eslint-plugin-react": "^7.0.1",
+        "prettier": "^1.13.3"
     }
 }

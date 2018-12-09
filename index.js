@@ -1,42 +1,33 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { TouchableOpacity, View, Image } from 'react-native'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { TouchableOpacity, View, Image, StyleSheet } from 'react-native'
 
-const propTypes = {
-  onPress: (index) => {},
+const styles = StyleSheet.create({
+  imageItem: {
+    width: 80,
+    height: 80,
+    borderColor: 'grey',
+    borderWidth: 2
+  }
+});
+
+ImageListItem.propTypes = {
+  onPressItem: (index) => {},
   id: PropTypes.number,
   uri: PropTypes.string,
-  selected: PropTypes.bool,
-  styles: PropTypes.object
-}
+  selected: PropTypes.bool
+};
 
-const defaultProps = {
-  styles: {
-    imageItem: {
-      width: 80,
-      height: 80,
-      borderColor: 'grey',
-      borderWidth: 2
-    }
-  }
-}
-
-class ImageListItem extends React.Component {
-  constructor (props) {
-    super(props)
-    this.handleOnPress = this.handleOnPress.bind(this)
-  }
-
-  handleOnPress (e) {
-    this.props.onPress(e.props.id)
+class ImageListItem extends React.PureComponent {
+  _onPress () {
+    this.props.onPressItem(this.props.id)
   }
 
   render () {
-    const styles = this.props.styles || {}
     const borderColor = this.props.selected ? 'red' : 'black'
     return (
       <TouchableOpacity
-        onPress={this.handleOnPress}>
+        onPress={this._onPress}>
         <View style={{ borderColor: borderColor, borderWidth: 2 }}>
           <Image style={styles.imageItem} source={{ uri: this.props.uri }} />
         </View>
@@ -45,7 +36,4 @@ class ImageListItem extends React.Component {
   }
 }
 
-ImageListItem.propTypes = propTypes
-ImageListItem.defaultProps = defaultProps
-
-export default ImageListItem
+export default ImageListItem;
