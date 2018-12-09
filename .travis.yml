@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+- stable
+cache:
+  yarn: true
+  directories:
+  - node_modules
+install:
+- yarn
+script:
+- yarn test
+deploy:
+  provider: npm
+  email: darioajr@gmail.com
+  api_key:
+    secure: jGHvfIQtXhO7ZFqxTMVp11je7W7s/RM8wsXPACDbrWIPso0p2B6HerD6n2rdYTwlLSQHPjS1+s8ZK9PPJ2fQpsQoEUB4viKEDidQxoUzrE2PGp0A+suH0mrXnMR4hm8pXANIay8R2KBBQ6ePfEh6jzLQZgjvcJs1dNh0Nkyog4wShUZpuMl1KA1flik/ZaExrEC6UrAPnAGzEUMLH/QdyTG6YiPrG6jRp6Ei5YTV4Pg22oeKhgXJSLRjbq36/jeEbtiJsStHJKcGob9zMGpmhVecniol9epqXy7QTKTNw73/3nQiWYLB9nzItm/m5AXkBy3UbwT8ovhPhUvDnd0IV0aG2RAuqCcKOcS6ay1xFAoW0cjWdqUyQge5Il7oQ+LvBGjYRxQLg7TVnXSqJVhEd14dQmGsEitfNpaasxdjZwa0l3nhAcMQBE0rPpxzapkEBgpl76acFQGDVCVqZHsxvGtkA/KNALhM4dl5cSgcmMVG6ACTKfInzipJkGMZJ6Tj2JSZx6NXHZGIsaac8ACC5EQ8Pd+m/yaztAGhMmYaedcT6v7QmroU4ADm+ybGzMRYKklLkpYWnuskWs/KdOtLzHHXK/gRK6gVNTG8YtaMAVWehTqC+IVreykpzBxaQHawmEytzu6bSccsdWIvtWrW0v66fcbWMHbCxtbwgb4qpxs=
+  on:
+    tags: true
+    repo: darioajr/react-native-image-listitem
+    condition: "$TRAVIS_TAG =~ ^v[0-9]+\\.[0-9]+\\.[0-9]+.*$"
