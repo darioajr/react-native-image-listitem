@@ -1,7 +1,6 @@
-# react-native-image-listitem [![Travis](https://img.shields.io/travis/oblador/react-native-image-listitem.svg)](https://travis-ci.org/oblador/react-native-image-listitem) [![npm version](https://img.shields.io/npm/v/react-native-image-listitem.svg)](https://www.npmjs.com/package/react-native-image-listitem)
+# react-native-image-listitem [![Travis](https://img.shields.io/travis/darioajr/react-native-image-listitem.svg)](https://travis-ci.org/darioajr/react-native-image-listitem) [![npm version](https://img.shields.io/npm/v/react-native-image-listitem.svg)](https://www.npmjs.com/package/react-native-image-listitem)
 *ListItem gallery for images in React Native*
 
-[![Build Status](https://travis-ci.org/darioajr/react-native-image-listitem.svg?branch=master)](https://travis-ci.org/darioajr/react-native-image-listitem)
 
 ## Installation
 
