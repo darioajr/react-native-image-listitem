@@ -39,7 +39,7 @@ Any [`Image` property](http://facebook.github.io/react-native/docs/image.html) a
 
 Check full example in the `Example` folder. 
 
-### Pie
+### ImagePicker with ImageListItem (Gallery)
 
 ```js
 import React from 'react'
