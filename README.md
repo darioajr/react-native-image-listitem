@@ -33,7 +33,7 @@ Any [`Image` property](http://facebook.github.io/react-native/docs/image.html) a
 
 ## Demo
 
-![image-progress-demo](https://cloud.githubusercontent.com/assets/378279/10882718/0f33e7b4-813b-11e5-9f6c-90df8b9050b8.gif)
+![image-progress-demo](https://user-images.githubusercontent.com/7606/49704753-3ab4ea00-fbfe-11e8-9f48-4734e5cdeab1.png)
 
 ## Example 
 
