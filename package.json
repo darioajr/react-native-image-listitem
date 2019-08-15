@@ -10,47 +10,48 @@
         "gallery"
     ],
     "author": {
-      "name": "Dario Alves Junior",
-      "email": "darioajr@gmail.com"
+        "name": "Dario Alves Junior",
+        "email": "darioajr@gmail.com"
     },
     "homepage": "https://github.com/darioajr/react-native-image-listitem",
-      "bugs": {
+    "bugs": {
         "url": "https://github.com/darioajr/react-native-image-listitem/issues"
     },
     "repository": {
-      "type": "git",
-      "url": "git@github.com:darioajr/react-native-image-listitem.git"
+        "type": "git",
+        "url": "git@github.com:darioajr/react-native-image-listitem.git"
     },
     "license": "MIT",
     "main": "index.js",
     "scripts": {
-      "test": "eslint index.js",
-      "format": "./node_modules/.bin/prettier --write {,Example/}*.js"
+        "test": "eslint index.js",
+        "format": "./node_modules/.bin/prettier --write {,Example/}*.js"
     },
     "dependencies": {
         "prop-types": "^15.6.0",
         "react": "16.6.1",
-        "react-native": "0.57.7",
-        "react-dom": "^16.6.1"
+        "react-dom": "^16.6.1",
+        "react-native": "0.57.7"
     },
     "devDependencies": {
-        "babel-core": "^6.21.0",
+        "@babel/core": "^7.5.5",
+        "babel-core": "^6.26.3",
+        "babel-eslint": "^7.0.0",
+        "babel-jest": "^20.0.3",
         "babel-loader": "^7.1.4",
         "babel-preset-env": "^1.6.1",
         "babel-preset-react": "^6.16.0",
         "babel-preset-stage-0": "^6.24.1",
-        "path": "^0.12.7",
-        "prop-types": "^15.6.0",
-        "react": "16.6.1",
-        "react-native": "0.57.7",
-        "react-dom": "^16.6.1",
-        "babel-eslint": "^7.0.0",
-        "babel-jest": "^20.0.3",
         "eslint": "^4.18.2",
         "eslint-config-airbnb": "^15.0.1",
         "eslint-plugin-import": "^2.3.0",
         "eslint-plugin-jsx-a11y": "^5.0.3",
         "eslint-plugin-react": "^7.0.1",
-        "prettier": "^1.13.3"
+        "path": "^0.12.7",
+        "prettier": "^1.13.3",
+        "prop-types": "^15.6.0",
+        "react": "16.6.1",
+        "react-dom": "^16.6.1",
+        "react-native": "0.57.7"
     }
 }
