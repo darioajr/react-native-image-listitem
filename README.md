@@ -1,6 +1,7 @@
 # react-native-image-listitem 
 
- [![npm version](https://img.shields.io/npm/v/react-native-image-listitem.svg)](https://www.npmjs.com/package/react-native-image-listitem)
+[![NPM Version](https://img.shields.io/npm/v/react-native-image-listitem)](https://www.npmjs.com/package/react-native-image-listitem) [![Build Status](https://img.shields.io/github/actions/workflow/status/darioajr/react-native-image-listitem/build.yml)](https://github.com/darioajr/react-native-image-listitem/actions)
+
 
 *ListItem gallery for images in React Native*
 
