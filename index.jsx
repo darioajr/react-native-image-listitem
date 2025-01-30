@@ -1,9 +1,7 @@
 /* eslint-disable arrow-parens */
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  TouchableOpacity, View, Image, StyleSheet,
-} from 'react-native';
+import { TouchableOpacity, View, Image, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   imageItem: {

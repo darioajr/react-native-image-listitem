@@ -19,13 +19,13 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:darioajr/react-native-image-listitem.git"
+        "url": "git+ssh://git@github.com/darioajr/react-native-image-listitem.git"
     },
     "license": "MIT",
     "main": "index.jsx",
     "scripts": {
         "test": "eslint index.jsx",
-        "format": "./node_modules/.bin/prettier --write {,Example/}*.js"
+        "format": "prettier --write *.jsx"
     },
     "standard-version": {
       "tagPrefix": ""
@@ -47,6 +47,7 @@
         "eslint-plugin-react": "^7.37.4",
         "eslint-plugin-react-hooks": "^4.6.0",
         "eslint-plugin-react-native": "^5.0.0",
-        "metro-react-native-babel-preset": "^0.77.0"
+        "metro-react-native-babel-preset": "^0.77.0",
+        "prettier": "^3.4.2"
     }
 }
