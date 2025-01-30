@@ -17,7 +17,6 @@ const styles = StyleSheet.create({
 class ImageListItem extends React.PureComponent {
   onPress() {
     const { id } = this.props;
-    // eslint-disable-next-line react/destructuring-assignment
     this.props.onPressItem(id);
   }
 
@@ -25,7 +24,6 @@ class ImageListItem extends React.PureComponent {
     const { selected, uri } = this.props;
     const borderColor = selected ? 'red' : 'black';
     return (
-      // eslint-disable-next-line no-underscore-dangle
       <TouchableOpacity onPress={this._onPress}>
         <View style={{ borderColor, borderWidth: 2 }}>
           <Image style={styles.imageItem} source={{ uri }} />

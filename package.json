@@ -22,15 +22,14 @@
         "url": "git@github.com:darioajr/react-native-image-listitem.git"
     },
     "license": "MIT",
-    "main": "index.js",
+    "main": "index.jsx",
     "scripts": {
-        "test": "eslint index.js",
+        "test": "eslint index.jsx",
         "format": "./node_modules/.bin/prettier --write {,Example/}*.js"
     },
     "dependencies": {
         "prop-types": "^15.8.1",
         "react": "^19.0.0",
-        "react-dom": "^19.0.0",
         "react-native": "^0.77.0"
     },
     "devDependencies": {
@@ -38,15 +37,13 @@
         "@babel/eslint-parser": "^7.26.5",
         "@babel/runtime": "^7.26.7",
         "@react-native-community/eslint-config": "^3.2.0",
-        "@typescript-eslint/eslint-plugin": "^8.22.0",
         "eslint": "^9.19.0",
-        "eslint-config-airbnb-typescript": "^18.0.0",
-        "eslint-define-config": "^2.1.0",
-        "eslint-plugin-react-native": "^5.0.0",
+        "eslint-config-airbnb": "^19.0.4",
         "eslint-plugin-import": "^2.31.0",
         "eslint-plugin-jsx-a11y": "^6.10.2",
         "eslint-plugin-react": "^7.37.4",
-        "metro-react-native-babel-preset": "^0.77.0",
-        "react-test-renderer": "19.0.0"
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-react-native": "^5.0.0",
+        "metro-react-native-babel-preset": "^0.77.0"
     }
 }
