@@ -30,10 +30,12 @@ jobs:
 
       - name: Bump version and create changelog
         run: |
-          npx standard-version -y
           git config --global user.email "darioajr@gmail.com"
           git config --global user.name "Dario Alves Junior"
+          npx standard-version -y
           git push --follow-tags origin master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish to npm
         if: startsWith(github.ref, 'refs/tags/')
