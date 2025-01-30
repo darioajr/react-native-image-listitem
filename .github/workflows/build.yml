@@ -31,6 +31,8 @@ jobs:
       - name: Bump version and create changelog
         run: |
           npx standard-version -y
+          git config --global user.email "darioajr@gmail.com"
+          git config --global user.name "Dario Alves Junior"
           git push --follow-tags origin master
 
       - name: Publish to npm
