@@ -1,6 +1,6 @@
 {
     "name": "react-native-image-listitem",
-    "version": "1.0.2",
+    "version": "1.0.1",
     "description": "React Native Image List Item, A simple list of images that allows multiple selections, to be used in conjunction with the camera functionality, providing a kind of gallery.",
     "keywords": [
         "react",
@@ -26,6 +26,9 @@
     "scripts": {
         "test": "eslint index.jsx",
         "format": "./node_modules/.bin/prettier --write {,Example/}*.js"
+    },
+    "standard-version": {
+      "tagPrefix": ""
     },
     "dependencies": {
         "prop-types": "^15.8.1",
